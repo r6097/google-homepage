@@ -1,0 +1,2 @@
+Goal: Practice using Git workflow, HTML, and CSS to break down the elements of the google homepage and rebuild it visually. (not in functionality).
+From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css)
