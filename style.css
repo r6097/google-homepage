@@ -10,7 +10,7 @@ ul{
 li{
     display: inline-block;
 }
-li a{
+.navbar{
     padding-top: 4px;
     display: inline-block;
     width:50px;
@@ -20,23 +20,24 @@ li a{
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
 }
+/* represents google apps icon */
+#images{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    border:none;
+    background-color: rgb(65, 65, 65);
+}
 /* sign-in for google user */
 #signin{
-    display: inline-block;
     width:70px;
     height:30px;
     border:none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     color:white;
-    background-color: rgb(81, 114, 221);
-}
-/* represents google apps icon */
-#images{
-    width: 20px;
-    height: 20px;
-    border:none;
-    background-color: rgb(65, 65, 65);
+    padding-right: 10px;
+    background-color: rgb(107, 139, 245);
 }
 /* google logo image in center */
 #logo{
@@ -56,9 +57,7 @@ p{
     justify-content: center;
 }
 #search{
-    /*
-    border:none;
-    */
+    margin-left: auto;
     height: 20px;
 }
 .footer{
@@ -71,8 +70,13 @@ p{
     padding-right:10px;
     background-color: rgb(233, 233, 233);
 }
+a:hover{
+    text-decoration: underline;
+    color: rgb(104, 103, 103);
+}
 a{
     color: rgb(83, 82, 82);
+    text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     padding-left: 12px;
