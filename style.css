@@ -1,9 +1,9 @@
 /* google logo image in center */
+#center{
+    display: grid;
+}
 #logo{
-    display: block;
-    /* clunky fix for centering */
-    margin-left: 38.7%; 
-    padding-top: 100px;
+    justify-self: center;
 }
 ul{
     list-style-type: none;
@@ -18,27 +18,50 @@ li{
     display: inline-flex;
     margin-left: 10px;
 }
-.navbar{
-    padding-top: 4px;
-    display: inline-block;
-    width:50px;
+.navgrid{
+    margin-left:15px;
+    margin-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8vw;
+    display: grid;
+    grid-template-columns: 20px 20px auto 25px 35px 5px 70px;
+    grid-gap: 30px;
     height:20px;
     color:rgb(65, 65, 65);
     font-size: 12px;
-    text-align: right;
     font-family: 'Courier New', Courier, monospace;
 }
-/* represents google apps icon */
+.navtxt{
+    margin-top: 10px;
+}
+#about{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#store{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#gmail{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
 #images{
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+/* represents google apps icon */
+#hub{
     width: 20px;
     height: 20px;
     padding-right: 10px;
-    padding-top: 8px;
-    padding-left: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    margin-top: 5px;
     border:none;
     background-color: rgb(109, 108, 108);
 }
-#images:hover{
+#hub:hover{
     background-color: rgb(65, 65, 65);
 }
 /* sign-in for google user */
@@ -62,14 +85,25 @@ p{
     display:flex;
     justify-content: center;
 }
+button.options{
+    border: none;
+    margin: 10px;
+    height: 30px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: rgb(233, 233, 233);
+    color: dark grey;
+}
 #search{
     margin-left: auto;
+    border: 1px rgb(228, 228, 228) solid;
+    border-radius: 25px;
     padding: 10px 20px;
 }
-input:hover{
-    box-shadow: 5px 10 px rgb(83, 82, 82);
+#search{
+    box-shadow: 2px 2px 2px rgb(155, 153, 153);
 }
-.footer{
+#footer{
     position:fixed;
     left:0;
     bottom:0;
@@ -88,6 +122,5 @@ a{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-left: 4px;
 }
